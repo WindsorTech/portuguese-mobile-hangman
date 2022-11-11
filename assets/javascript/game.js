@@ -3,7 +3,7 @@
 // Array with all possible cities to be chosen
 // var cities22 = ["beijing", "london", "moscow", "orlando", "paris", "rome", "sydney", "tokyo", "amsterdam", "athens", "barcelona", "berlin", "brasilia", "chicago", "dublin", "havana", "hiroshima", "istanbul", "liverpool", "madrid", "miami", "montreal", "prague", "seoul", "windsor", "munich", "toronto", "manchester", "melbourne", "wellington", "santiago", "medellin", "lisbon", "cairo", "montevideo", "bangkok", "warsaw", "brussels", "venice", "zurich", "osaka"];
 
-var cities = ["argentina", "brazil", "usa", "mexico", "canada", "colombia", "jamaica", "chile", "portugal", "spain", "france", "italy", "germany", "england", "ireland", "scotland", "belgium", "poland", "sweden", "norway", "greece", "russia", "india", "china", "japan", "zimbabwe", "egypt", "thailand", "vietnam", "australia", "iraq", "malaysia", "cuba", "morocco", "ukraine", "turkey", "indonesia", "hungary", "finland", "denmark", "croatia"];
+var cities = ["argentina", "brasil", "eua", "mexico", "canada", "colombia", "jamaica", "chile", "portugal", "espanha", "franca", "italia", "alemanha", "inglaterra", "irlanda", "escocia", "belgica", "polonia", "suecia", "noruega", "grecia", "russia", "india", "china", "japao", "zimbabue", "egito", "tailandia", "vietna", "australia", "iraque", "malasia", "cuba", "marrocos", "ucrania", "turquia", "indonesia", "hungria", "finlandia", "dinamarca", "croacia"];
 
 // Variable to store the chosen city to be played in each round
 var cityInPlay = null;
@@ -331,7 +331,7 @@ function youWin () {
 	$('#guesses-home').hide();
 
 	// print the "YOU WIN" phrase to the page
-	$('#news').html("<h3><font color='blue'>CONGRATS, YOU WIN!</font></h3>");
+	$('#news').html("<h3><font color='blue'>PARABÉNS, VOCÊ VENCEU!</font></h3>");
 
 	// print the city image to the page
 	$('#picture').html('<img src="assets/images/' + cityInPlay + '.jpg" width="90%" height="90%" border="3">');
@@ -359,7 +359,7 @@ function youLose() {
 	$('#guesses-home').hide();
 
 	// print the "YOU LOSE" phrase to the page
-	$('#news').html("<h3><font color='red'>YOU LOSE, TRY AGAIN!</font></h3>");
+	$('#news').html("<h3><font color='red'>VOCÊ PERDEU, TENTE NOVAMENTE!</font></h3>");
 	
 	// Show the Restart button and call Restart function on click
 	$(".btn-restart").show();
